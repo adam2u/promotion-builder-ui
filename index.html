@@ -1,92 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2566">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Promotion Builder</title>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Promotion Builder&lt;/title&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Promotion Builder&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="name"&gt;Name:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="name" name="name" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="description"&gt;Description:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;textarea id="description" name="description" required&gt;&lt;/textarea&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="startDate"&gt;Start Date:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="date" id="startDate" name="startDate" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="endDate"&gt;End Date:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="date" id="endDate" name="endDate" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="checkbox" id="noEndDate" name="noEndDate"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="noEndDate"&gt;No End Date&lt;/label&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="promoType"&gt;Promo Type:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="promoType" name="promoType"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="basicDiscount"&gt;Basic Discount&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="rewards"&gt;Rewards&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="bundles"&gt;Bundles&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="value"&gt;Value:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="number" id="value" name="value" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="discountType"&gt;Discount Type:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="discountType" name="discountType"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="%"&gt;%&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="$"&gt;$&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="orderLimit"&gt;Order Limit:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="number" id="orderLimit" name="orderLimit" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="checkbox" id="noOrderLimit" name="noOrderLimit"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="noOrderLimit"&gt;No Order Limit&lt;/label&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="planType"&gt;Plan Type:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="planType" name="planType"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="payAsYouGo"&gt;Pay As You Go&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="laundry"&gt;Laundry&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="laundryAndLinens"&gt;Laundry &amp; Linens&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="minimumOrderTotal"&gt;Minimum Order Total:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="number" id="minimumOrderTotal" name="minimumOrderTotal" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="market"&gt;Market:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="market" name="market" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="maximumDiscount"&gt;Maximum Discount Allowed:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="number" id="maximumDiscount" name="maximumDiscount" required&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="promotionApplication"&gt;Promotion Application:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="promotionApplication" name="promotionApplication"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="code"&gt;Code&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="automatic"&gt;Automatic&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="eligibleCustomers"&gt;Eligible customers&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button type="submit"&gt;Submit&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <h1>Promotion Builder</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- Additional form fields here -->
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>

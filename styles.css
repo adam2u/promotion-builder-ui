@@ -1,40 +1,35 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2818
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-\f0\fs24 \cf0 body \{\
-    font-family: Arial, sans-serif;\
-    margin: 20px;\
-\}\
-\
-form \{\
-    display: flex;\
-    flex-direction: column;\
-    max-width: 400px;\
-\}\
-\
-label \{\
-    margin-top: 10px;\
-\}\
-\
-input, select, textarea \{\
-    padding: 5px;\
-    margin-top: 5px;\
-    margin-bottom: 15px;\
-\}\
-\
-button \{\
-    background-color: #4CAF50;\
-    color: white;\
-    padding: 10px;\
-    border: none;\
-    cursor: pointer;\
-\}\
-\
-button:hover \{\
-    background-color: #45a049;\
-\}\
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block; /* Ensure labels are block elements to occupy a full line */
+    margin: 10px 0 5px; /* Space around labels */
+}
+
+input, select, textarea {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Add padding for better touch */
+    margin-bottom: 15px; /* Space below each field */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darken button color on hover */
 }
